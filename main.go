@@ -1,6 +1,8 @@
 package main
 
-import "exercise/slices/slices"
+import (
+	"exercise/slices/contexts"
+)
 
 func main() {
 
@@ -14,5 +16,9 @@ func main() {
 	// pointers.PointerReceivers()
 
 	//* Slices
-	slices.SlicesExamples()
+	// slices.SlicesExamples()
+
+	//* Contexts
+	// contexts.ContextsExamplesWithTimeOut()
+	contexts.ContextWithValues()
 }
