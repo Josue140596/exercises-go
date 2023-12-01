@@ -7,7 +7,7 @@ import "slices"
 // However, it is not efficient because it has to loop through all the elements
 func removeByIndexLoop(slice []int, index int) []int {
 	// Create a new slice with the same length as the original slice - 1
-	result := make([]int, 0, len(slice)-1)
+	result := make([]int, 0, len(slice)-1) // [] It has capacity 8
 	for i, v := range slice {
 		if i != index {
 			result = append(result, v)

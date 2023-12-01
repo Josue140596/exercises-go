@@ -1,8 +1,6 @@
 package main
 
-import (
-	"exercise/slices/contexts"
-)
+import "exercise/slices/routines"
 
 func main() {
 
@@ -20,5 +18,11 @@ func main() {
 
 	//* Contexts
 	// contexts.ContextsExamplesWithTimeOut()
-	contexts.ContextWithValues()
+	// contexts.ContextWithValues()
+
+	//* Routines and wait groups
+	// routines.WithoutRoutines()
+	// routines.WithRoutines()
+	// routines.WithRoutinesWaitGroup()
+	routines.UseCaseRoutines()
 }
