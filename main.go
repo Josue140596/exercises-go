@@ -1,6 +1,6 @@
 package main
 
-import "exercise/slices/routines"
+import "exercise/slices/idiomok"
 
 func main() {
 
@@ -24,5 +24,10 @@ func main() {
 	// routines.WithoutRoutines()
 	// routines.WithRoutines()
 	// routines.WithRoutinesWaitGroup()
-	routines.UseCaseRoutines()
+	// routines.UseCaseRoutines()
+
+	//* Idiom Ok
+	// idiomok.WithoutOk()
+	// idiomok.WithOk()
+	idiomok.UseCaseIdiomOk()
 }
