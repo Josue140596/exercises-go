@@ -5,7 +5,7 @@ import "slices"
 // Remove by loop
 // This function removes an element from a slice by index
 // However, it is not efficient because it has to loop through all the elements
-func removeByIndexLoop(slice []int, index int) []int {
+func RemoveByIndexLoop(slice []int, index int) []int {
 	// Create a new slice with the same length as the original slice - 1
 	result := make([]int, 0, len(slice)-1) // [] It has capacity 8
 	for i, v := range slice {
@@ -17,7 +17,7 @@ func removeByIndexLoop(slice []int, index int) []int {
 }
 
 // Remove by copies
-func removeNewSliceByCopies(slice []int, index int) []int {
+func RemoveNewSliceByCopies(slice []int, index int) []int {
 	result := make([]int, len(slice)-1)
 	// Copy the first part of the slice
 	// For example, if index = 2, then copy the first 2 elements
@@ -29,7 +29,7 @@ func removeNewSliceByCopies(slice []int, index int) []int {
 }
 
 // Remove by copy
-func removeNewSliceByCopy(slice []int, index int) []int {
+func RemoveNewSliceByCopy(slice []int, index int) []int {
 	// Copy the first part of the slice
 	// For example, if index = 2, then copy the first 2 elements
 	copy(slice[index:], slice[index+1:]) // [10 20 40 50 60 70 80 90]
@@ -37,7 +37,7 @@ func removeNewSliceByCopy(slice []int, index int) []int {
 }
 
 // Remove by append
-func removeByAppend(slice []int, index int) []int {
+func RemoveByAppend(slice []int, index int) []int {
 	// Append the first part of the slice
 	// For example, if index = 2, then append the first 2 elements
 	// [10 20]
@@ -49,6 +49,6 @@ func removeByAppend(slice []int, index int) []int {
 }
 
 // Remove by slices package
-func removeBySlices(slice []int, index int) []int {
+func RemoveBySlices(slice []int, index int) []int {
 	return slices.Delete(slice, index, index+1)
 }
