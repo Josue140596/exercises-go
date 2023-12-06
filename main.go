@@ -1,7 +1,7 @@
 package main
 
 import (
-	"exercise/slices/dataraces"
+	"exercise/slices/usecases/slices"
 )
 
 func main() {
@@ -36,5 +36,9 @@ func main() {
 	//* Data races
 	// dataraces.ExampleDataRace()
 	// dataraces.WorkingWithMutex()
-	dataraces.WorkingWithAtomic()
+	// dataraces.WorkingWithAtomic()
+
+	//============================================================
+	//* Exercises - Slices - Use Case 01
+	slices.Prices()
 }
