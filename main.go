@@ -1,6 +1,8 @@
 package main
 
-import "exercise/slices/idiomok"
+import (
+	"exercise/slices/dataraces"
+)
 
 func main() {
 
@@ -29,5 +31,10 @@ func main() {
 	//* Idiom Ok
 	// idiomok.WithoutOk()
 	// idiomok.WithOk()
-	idiomok.UseCaseIdiomOk()
+	// idiomok.UseCaseIdiomOk()
+
+	//* Data races
+	// dataraces.ExampleDataRace()
+	// dataraces.WorkingWithMutex()
+	dataraces.WorkingWithAtomic()
 }
