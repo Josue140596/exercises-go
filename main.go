@@ -1,7 +1,7 @@
 package main
 
 import (
-	"exercise/slices/usecases/slices"
+	"exercise/slices/technicaltest"
 )
 
 func main() {
@@ -40,5 +40,9 @@ func main() {
 
 	//============================================================
 	//* Exercises - Slices - Use Case 01
-	slices.Prices()
+	// slices.Prices()
+
+	//* Technical Tests
+	// Palindrome
+	technicaltest.TTPalindrome()
 }
